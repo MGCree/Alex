@@ -1,6 +1,7 @@
 import sys
 import time
 from close import exit
+from greetings import greet
 
 #---------Bot Setup----------|
 name = "Alex"               #|
@@ -38,6 +39,9 @@ def main():
                 
                 if cmd == "exit":
                     exit()                 
+
+                if cmd == "hi":
+                    greet()
 
 # Other Variables
 startup = True
