@@ -1,5 +1,6 @@
 import sys
 import time
+from close import exit
 
 #---------Bot Setup----------|
 name = "Alex"               #|
@@ -36,7 +37,7 @@ def main():
                 cmd = input("Waiting on command: ")
                 
                 if cmd == "exit":
-                    sys.exit()                  
+                    exit()                 
 
 # Other Variables
 startup = True
