@@ -3,6 +3,7 @@ import time
 from close import exit
 from greetings import greet
 from calculator import calc
+from transcribe import append
 
 #---------Bot Setup----------|
 name = "Alex"               #|
@@ -44,7 +45,8 @@ def main():
                     greet()
                 elif cmd == "calculate":
                     calc()
-
+                elif cmd == "create text file":
+                    createFile()
                 
                 else:
                     print("This is not a valid command yet")
