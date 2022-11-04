@@ -2,6 +2,7 @@ import sys
 import time
 from close import exit
 from greetings import greet
+from calculator import calc
 
 #---------Bot Setup----------|
 name = "Alex"               #|
@@ -39,9 +40,14 @@ def main():
                 
                 if cmd == "exit":
                     exit()                 
-
-                if cmd == "hi":
+                elif cmd == "hi":
                     greet()
+                elif cmd == "calculate":
+                    calc()
+
+                
+                else:
+                    print("This is not a valid command yet")
 
 # Other Variables
 startup = True
