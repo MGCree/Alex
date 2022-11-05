@@ -26,9 +26,9 @@ def commands():
                     greet()
                 elif cmd == "calculate":
                     calc()
-                elif cmd == "create text file":
+                elif cmd == "create file":
                     createFile()
-                elif cmd == "delete text file":
+                elif cmd == "delete file":
                     deleteFile()
                 
                 else:
