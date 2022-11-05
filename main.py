@@ -2,11 +2,6 @@ import sys
 import time
 from commandManager import *
 
-#---------Bot Setup----------|
-name = "Alex"               #|
-creator = "Jakub Jankowski" #|
-#----------------------------|
-
 #-----User Info-----|
 user = "mgcree"    #|
 passcode = "11823" #|
@@ -28,7 +23,8 @@ def Startup():
 
 def main():
     print("Welcome Sir")
-    commands()
+    while True:
+        commands()
 
 # Other Variables
 startup = True

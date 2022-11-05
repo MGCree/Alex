@@ -1,9 +1,15 @@
 import sys
 import time
+
 from close import *
 from greetings import *
 from calculator import *
 from fileManager import *
+
+#---------Bot Setup----------|
+name = "Alex"               #|
+creator = "Jakub Jankowski" #|
+#----------------------------|
 
 def commands():
     while True:
