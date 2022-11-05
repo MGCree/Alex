@@ -3,7 +3,7 @@ import time
 from close import exit
 from greetings import greet
 from calculator import calc
-from transcribe import append
+from transcribe import createFile
 
 #---------Bot Setup----------|
 name = "Alex"               #|
