@@ -1,9 +1,6 @@
 import sys
 import time
-from close import exit
-from greetings import greet
-from calculator import calc
-from transcribe import createFile
+from commandManager import *
 
 #---------Bot Setup----------|
 name = "Alex"               #|
@@ -31,25 +28,7 @@ def Startup():
 
 def main():
     print("Welcome Sir")
-    while True:
-        nameWait = input("Waiting... ")
-        cmd = ""
-
-        if nameWait == name:
-            while True:
-                cmd = input("Waiting on command: ")
-                
-                if cmd == "exit":
-                    exit()                 
-                elif cmd == "hi":
-                    greet()
-                elif cmd == "calculate":
-                    calc()
-                elif cmd == "create text file":
-                    createFile()
-                
-                else:
-                    print("This is not a valid command yet")
+    commands()
 
 # Other Variables
 startup = True
