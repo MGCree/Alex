@@ -6,6 +6,16 @@ def createFile():
 
     file = open(fileName + fileExtention, "x")
 
+def appendFile():
+    fileName = input("Select file to edit:  ")
+    if os.path.exists(fileName):
+        file = open(fileName, "a")
+        appendText = input("Text to append:  ")
+        file.write(appendText)
+        file.close()
+
+
+
 def deleteFile():
     fileName = input("Choose a file to delete:  ")
 

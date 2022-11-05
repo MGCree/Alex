@@ -30,6 +30,8 @@ def commands():
                     createFile()
                 elif cmd == "delete file":
                     deleteFile()
+                elif cmd == "append to file":
+                    appendFile()
                 
                 else:
                     print("This is not a valid command yet")
