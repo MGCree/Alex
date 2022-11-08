@@ -5,6 +5,7 @@ from close import *
 from greetings import *
 from calculator import *
 from fileManager import *
+from webManager import *
 
 #---------Bot Setup----------|
 name = "Alex"               #|
@@ -32,6 +33,8 @@ def commands():
                     deleteFile()
                 elif cmd == "append to file":
                     appendFile()
+                elif cmd == "search":
+                    openWebPage()
                 
                 else:
                     print("This is not a valid command yet")

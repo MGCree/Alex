@@ -14,8 +14,6 @@ def appendFile():
         file.write(appendText)
         file.close()
 
-
-
 def deleteFile():
     fileName = input("Choose a file to delete:  ")
 
