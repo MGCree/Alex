@@ -1,6 +1,7 @@
 import sys
 import time
 from commandManager import *
+import whisper
 
 #-----User Info-----|
 user = "mgcree"    #|
