@@ -35,6 +35,8 @@ def commands():
                     appendFile()
                 elif cmd == "search":
                     openWebPage()
+                elif cmd == "create folder":
+                    createFolder()
                 
                 else:
                     print("This is not a valid command yet")

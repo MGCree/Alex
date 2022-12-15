@@ -6,6 +6,10 @@ def createFile():
 
     file = open(fileName + fileExtention, "x")
 
+def createFolder():
+    folderName = input("Choose a name for the folder:  ")
+    os.mkdir(folderName)
+
 def appendFile():
     fileName = input("Select file to edit:  ")
     if os.path.exists(fileName):
