@@ -36,5 +36,6 @@ def moveFile():
     file = input("which file:  ")
     filePath = os.path.abspath(file)
     destination = input("where:  ")
+    destinationPath = os.path.abspath(destination)
 
     shutil.move(filePath, destination)
