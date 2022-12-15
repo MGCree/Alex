@@ -34,6 +34,7 @@ def deleteFolder():
 
 def moveFile():
     file = input("which file:  ")
+    filePath = os.path.abspath(file)
     destination = input("where:  ")
 
-    shutil.move(file, destination)
+    shutil.move(filePath, destination)
