@@ -12,6 +12,7 @@ def appendFile():
         file = open(fileName, "a")
         appendText = input("Text to append:  ")
         file.write(appendText)
+        file.save()
         file.close()
 
 def deleteFile():
