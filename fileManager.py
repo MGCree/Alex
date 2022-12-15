@@ -22,9 +22,10 @@ def appendFile():
 
 def deleteFile():
     fileName = input("Choose a file to delete:  ")
+    file_path = os.path.abspath(fileName)
 
-    if os.path.exists(fileName):
-        os.remove(fileName)
+    if os.path.exists(file_path):
+        os.remove(file_path)
     else:
         print("The file does not exist")
 
