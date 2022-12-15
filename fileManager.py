@@ -1,4 +1,5 @@
 import os
+import shutil
 
 def createFile():
     fileName = input("Choose a file name:  ")
@@ -19,8 +20,6 @@ def appendFile():
         file.save()
         file.close()
 
-
-
 def deleteFile():
     fileName = input("Choose a file to delete:  ")
 
@@ -32,3 +31,9 @@ def deleteFile():
 def deleteFolder():
     folder = input("which folder do you want to delete:  ")
     os.rmdir(folder)
+
+def moveFile():
+    file = input("which file:  ")
+    destination = input("where:  ")
+
+    shutil.move(file, destination)
