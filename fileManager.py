@@ -38,4 +38,7 @@ def moveFile():
     destination = input("where:  ")
     destinationPath = os.path.abspath(destination)
 
+    if not os.path.exists(destinationPath):
+        os.makedirs(destinationPath)
+
     shutil.move(filePath, destination)
