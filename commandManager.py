@@ -37,6 +37,8 @@ def commands():
                     openWebPage()
                 elif cmd == "create folder":
                     createFolder()
+                elif cmd == "delete folder":
+                    deleteFolder()
                 
                 else:
                     print("This is not a valid command yet")

@@ -19,6 +19,8 @@ def appendFile():
         file.save()
         file.close()
 
+
+
 def deleteFile():
     fileName = input("Choose a file to delete:  ")
 
@@ -26,3 +28,7 @@ def deleteFile():
         os.remove(fileName)
     else:
         print("The file does not exist")
+
+def deleteFolder():
+    folder = input("which folder do you want to delete:  ")
+    os.rmdir(folder)
