@@ -39,6 +39,8 @@ def commands():
                     createFolder()
                 elif cmd == "delete folder":
                     deleteFolder()
+                elif cmd == "move file":
+                    moveFile()
                 
                 else:
                     print("This is not a valid command yet")
