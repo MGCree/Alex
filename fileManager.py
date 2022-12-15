@@ -22,7 +22,7 @@ def appendFile():
 
 def deleteFile():
     fileName = input("Choose a file to delete:  ")
-    file_path = os.path.join(os.getcwd(), fileName)
+    file_path = os.path.join(os.path.abspath(), fileName)
 
     if os.path.exists(file_path):
         os.remove(file_path)
